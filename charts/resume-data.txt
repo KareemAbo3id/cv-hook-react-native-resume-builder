@@ -1,0 +1,83 @@
+- Home Tap . Button Primary: "+ Create New Resume":
+
+STEPS
+
+1- Select a Template:
+h1: Select a Template
+p: Select a color and a template to get started.
+------------------------------------
+FIXED
+Top Bar: button:"templates" + button:"Preview":
+  button:"templates" click open bottom pannel:
+    view:
+      p: choose templates and colors
+      flatlist: H templates
+      one template click: select
+      one color click: select
+      done button
+  button:"Preview" click open allScreen pannel of resume
+Bottom Bar: button:"Next"
+------------------------------------
+2- Personal Details:
+h1: Personal Details
+p: Get started with the basics: your name and contact information.
+Profile Picture
+Job Title
+First Name
+Last Name
+Phone
+Email Address
+Address
+City
+Post Code
+State
+Country
+Social Links: LinkedIn, Github, Stackoverflow, Twitter(X)
+------------------------------------
+3- h1: Looking good! Let’s tackle your professional experience.
+p: Quantify your professional achievements with numbers and data.
+p: Reframe routine job responsibilities as accomplishments.
+------------------------------------
+4- h1: Professional Experience
+p: Tell us about your most recent job.
+  state [Position Title Company Name|Start Date End Date or Currently Employed]
+List of accordions:
+each accordion: move btn, expand btn, delate btn:
+  Position Title
+  Company Name
+  Start Date
+  End Date
+  Currently Employed
+  Work Summary: box writing w/feats (B I U link S pullets nums)
+ + Add more work experience
+------------------------------------
+5- h1: Great job! Up next, your educational milestones.
+p: Feature degrees, certifications or licenses, and training related to your industry.
+p: Recent graduates: highlight academic projects, awards, and coursework.
+------------------------------------
+6- h1: Education
+p: Add your most relevant education, including programs you're currently enrolled in.
+  state [Degree of Field of Study | School Name, School | End Date]
+List of accordions:
+each accordion: move btn, expand btn, delate btn:
+  School Name
+  School Location
+  Start Date
+  End Date
+  I currently study here
+  Degree
+  Field of Study
+  Description: box writing w/feats (B I U link S pullets nums)
+ + Add more education
+------------------------------------
+7- h1: Excellent progress! Now, let’s highlight your key skills.
+p: Incorporate keywords from job descriptions so employers and applicant tracking systems can scan your resume.
+p: Highlight a mix of hard skills like programming and soft skills like team management.
+------------------------------------
+8- h1: Key Skills
+p: Add relevant professional key skills and proficiencies.
+  state [list of skills]
+List of boxes:
+  p: Skill
+  input: textInput
++ add more skill

@@ -1,0 +1,39 @@
+site: https://app.resumebuilder.com/my-account/
+
+App Main Taps:
+- Home
+- My Resumes
+- Account
+
+- Home Tap:
+. h1: "My Resumes"
+. p: "Welcome back, %userName%"
+. Button Primary: "+ Create New Resume"
+. Recent view: flatlist H of resumes overview Box - data:
+  . name
+  . title
+  . dateOfUpdate
+  . click to edit
+. suggest view: flatlist V of 2 cols suggest resumes overview Box - data:
+  . title
+
+- My Resumes Tap:
+. Recent view: flatlist V of 1 col resumes overview Box - data: name, title, dateOfCreat, click to edit
+
+- Account Tap:
+. Info View: h1: My Account
+. Box:
+  . h3: Photo
+    . Box: photo
+  . h3: Basic Info
+    . p: Name
+    . p: Username
+    . p: Email
+    . p: Phone
+    . p: Location
+  . h3: Social links
+    . p: LinkedIn
+    . p: Github
+    . p: Stackoverflow
+    . p: Twitter (X)
+    . p: Website
