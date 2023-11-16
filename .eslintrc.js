@@ -1,15 +1,12 @@
 module.exports = {
-  root: true,
+  parser: "babel-eslint",
+  plugins: ["react", "react-native"],
+  env: {
+    "react-native/react-native": true,
+  },
   extends: [
-    'universe/native',
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-native/all",
   ],
-  rules: {
-    "quotes": [2, "double", { "avoidEscape": true }],
-    'prettier/prettier': [
-      'error',
-      {
-        'endOfLine': 'auto',
-      }
-    ],
-  }
 };
